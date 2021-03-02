@@ -1,0 +1,38 @@
+{
+  "name": "js-framework-benchmark-non-keyed-stage0",
+  "version": "1.0.0",
+  "description": "stage0 demo",
+  "main": "dist/app.min.js",
+  "scripts": {
+    "build-dev": "rollup -c -w",
+    "build-prod": "rollup -c",
+    "start": "ws"
+  },
+  "js-framework-benchmark": {
+    "frameworkVersionFromPackage": "stage0",
+    "issues": [772]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/krausest/js-framework-benchmark.git"
+  },
+  "keywords": [
+    "stage0"
+  ],
+  "author": "Pavel Martynov",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/krausest/js-framework-benchmark/issues"
+  },
+  "homepage": "https://github.com/krausest/js-framework-benchmark#readme",
+  "dependencies": {
+    "local-web-server": "^4.2.1",
+    "stage0": "0.0.25"
+  },
+  "devDependencies": {
+    "@rollup/plugin-node-resolve": "^11.2.0",
+    "rollup": "^2.40.0",
+    "rollup-plugin-minifyliterals": "^1.1.0",
+    "rollup-plugin-terser": "^7.0.2"
+  }
+}
